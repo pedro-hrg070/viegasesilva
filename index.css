@@ -1,0 +1,299 @@
+:root {
+    --primary-color: #d2b48c;
+    --background-color: #f8f8f8;
+    --text-color: #333;
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+}
+/* Ícones de Contato */
+.contact-icons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.whatsapp-icon, .instagram-icon, .map-icon {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.whatsapp-icon img, .instagram-icon img, .map-icon img {
+    width: 30px;
+    height: auto;
+    margin: 1px;
+}
+/* Cabeçalho e Navegação */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.top-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    justify-content: center;
+}
+
+.top-nav ul li {
+    margin: 0;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 20px;
+    border: 2px solid var(--white);
+    border-radius: 0;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+}
+
+.top-nav ul li a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.logo {
+    text-align: center;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.logo h1 {
+    font-size: 4.0em;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.associados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.associados h2 {
+    font-size: 2.0em;
+    margin: 5px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.barra-lateral {
+    width: 500px;
+    height: 4px;
+    background-color: var(--white);
+}
+
+.logo-divider {
+    width: 80%;
+    height: 2px;
+    background-color: var(--white);
+    margin: 15px auto;
+}
+/* Seção Principal */
+main {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 100px 50px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-top: 20px;
+}
+/* Seção "Quem Somos" (Ajustada) */
+.about-main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.advogados-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.advogado {
+    text-align: center;
+}
+
+.advogado img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.advogado h3 {
+    margin: 10px 0;
+    color: #000; /* Texto do nome do advogado em preto */
+}
+
+.about-text h2, .equipe-texto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000; /* Títulos "Quem Somos" e "Nossa Equipe" em preto */
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.equipe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.equipe-texto {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000; /* Texto da equipe em preto */
+}
+
+.equipe-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.about-content p, .equipe-texto p {
+    line-height: 1.6;
+    color: #000; /* Parágrafos em um tom de cinza escuro para melhor legibilidade */
+    
+}
+
+.equipe-section, .servicos-section {
+    margin: 0;
+    padding: 0;
+}
+/* Seção "Nossos Serviços" */
+.servicos-section {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.servicos-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicos-content h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.servico {
+    border-top: 1px solid #ccc;
+    padding: 40px 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.servico h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.servico p {
+    line-height: 1.6;
+    color: #000;
+}
+/* Rodapé */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+}
+
+.footer-section {
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: var(--white);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: var(--white);
+    text-decoration: none;
+}
