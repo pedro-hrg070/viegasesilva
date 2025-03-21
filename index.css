@@ -431,3 +431,286 @@ footer {
     color: var(--white);
     text-decoration: none;
 }
+
+/* Ajuste para navegação no celular */
+@media (max-width: 768px) {
+    .top-nav ul {
+        flex-direction: column; /* Torna o menu vertical */
+        align-items: center;
+    }
+
+    .top-nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .logo h1 {
+        font-size: 2.5em; /* Reduz tamanho da logo */
+    }
+
+    .advogados-section {
+        flex-direction: column; /* Deixa advogados empilhados */
+        align-items: center;
+    }
+
+    .advogado {
+        width: 90%; /* Redimensiona cards dos advogados */
+    }
+
+    .about-content {
+        padding: 20px; /* Reduz espaços */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Deixa o rodapé empilhado */
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%; /* Ocupa toda a largura */
+        margin-bottom: 20px;
+    }
+
+    .footer-section:not(:last-child)::after {
+        display: none; /* Remove divisórias no mobile */
+    }
+
+    .contact-icons {
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .contact-icons img {
+        width: 40px; /* Reduz tamanho dos ícones */
+    }
+}
+
+/* Ajustes Gerais para Responsividade */
+body {
+    font-size: 16px; /* Mantém tamanho de texto legível */
+}
+
+img {
+    max-width: 100%; /* Impede que imagens saiam da tela */
+    height: auto;
+}
+
+/* Efeito de zoom nos ícones ao passar o mouse */
+.contact-icons img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.05);
+}
+
+.contact-icons img:active {
+    transform: scale(1.1);
+}
+
+/* Efeito de zoom nos botões ao passar o mouse */
+.top-nav ul li a {
+    transition: transform 0.3s ease;
+}
+
+.top-nav ul li a:hover {
+    transform: scale(1.05);
+}
+
+/* Se quiser efeito ao clicar no botão */
+.top-nav ul li a:active {
+    transform: scale(1.1);
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #000; /* Cor preta */
+    margin: 40px 0;
+    width: 100%;
+}
+.about-content h2 {
+    text-align: center; /* Centraliza o texto */
+    color: black; /* Define a cor preta */
+    font-weight: bold; /* Mantém a ênfase no texto */
+    text-transform: uppercase; /* Mantém o texto em maiúsculas */
+    margin-bottom: 20px; /* Ajusta o espaçamento */
+    font-size: 32px; /* Ajuste conforme necessário para igualar ao outro título */
+
+}
+
+.advogado p {
+    text-align: center; /* Centraliza o texto */
+    font-size: 16px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 10px; /* Espaço antes do ícone do WhatsApp */
+}
+.advogado a {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.advogado a img {
+    width: 40px;  /* Ajuste para o tamanho desejado */
+    height: 40px; /* Mantém a proporção */
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os links */
+}
+
+.coluna a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Cor do texto */
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.coluna a:hover {
+    background-color: #ddd;
+    color: #000; /* Muda a cor ao passar o mouse */
+}
+
+/* Ajuste dos ícones de contato */
+.contact-icons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-icons a img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Layout de Serviços */
+.servicos-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.servico-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.servico-item:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+    border-top: 2px solid #ddd;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Alterado para um fundo escuro */
+    color: white; /* Garante que o texto fique visível */
+    margin-top: 50px;
+    border-top: 2px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+.footer-bottom a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.areas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.areas-atuacao {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define duas colunas */
+    gap: 15px;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 900px;
+}
+
+.areas-grid a {
+    background: #f8f8f8;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+}
+
+
+
+
+
