@@ -4,81 +4,70 @@
     --text-color: #333;
     --white: #fff;
     --black: #000;
-    --spacing: 20px; /* Espaçamento uniforme */
+    --spacing: 20px;
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--black);
+    color: var(--white);
     margin: 0;
     padding: 0;
-    background-color: var(--black);
-    color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
+    text-align: center;
 }
 
-/* Seção "Quem Somos" */
-.about-main {
-    padding: var(--spacing); /* Usando a variável de espaçamento */
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.about-content {
-    background-color: #f0f0f0;
-    padding: var(--spacing);
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombreamento */
-    margin-bottom: 40px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .advogados-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .advogado {
-        width: 80%; /* Aumenta a largura para telas menores */
-    }
-}/* Ícones de Contato */
-.contact-icons {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 9999;
-}
-
-.whatsapp-icon, .instagram-icon, .map-icon {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.whatsapp-icon img, .instagram-icon img, .map-icon img {
-    width: 50px;
-    height: auto;
-    margin: 1px;
-}
-/* Cabeçalho e Navegação */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 40px;
-    background-color: var(--black);
     color: var(--white);
+    background-color: var(--black);
+    text-align: center;
+    padding: 60px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', serif;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    color: var(--white);
+    position: relative;
+    padding: 8px;
+}
+
+header h2::before,
+header h2::after {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: var(--white);
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+.header-divider,
+.logo-divider,
+.barra-lateral {
+    background-color: var(--white);
+    height: 2px;
+    margin: 20px auto;
+    width: 80%;
 }
 
 .top-nav ul {
     display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
-    margin: 0 auto 20px auto;
-    justify-content: center;
+    margin: 60px 0;
 }
 
 .top-nav ul li {
-    margin: 0;
+    margin: 0 10px;
 }
 
 .top-nav ul li a {
@@ -86,710 +75,264 @@ header {
     color: var(--white);
     padding: 10px 20px;
     border: 2px solid var(--white);
-    border-radius: 0;
-    margin: 0 10px;
+    border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    display: block;
 }
 
 .top-nav ul li a:hover {
     background-color: var(--white);
     color: var(--black);
-}
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
 
-.logo {
-    text-align: center;
-    color: var(--white);
-    margin-top: 20px;
 }
-
-.logo h1 {
-    font-size: 4.0em;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    letter-spacing: 2px;
-}
-
-.associados {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.associados h2 {
-    font-size: 2.0em;
-    margin: 5px 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    letter-spacing: 1px;
-}
-
-.barra-lateral {
-    width: 500px;
-    height: 4px;
-    background-color: var(--white);
-}
-
-.logo-divider {
-    width: 80%;
-    height: 2px;
-    background-color: var(--white);
-    margin: 15px auto;
-}
-/* Seção Principal */
-main {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 0px 50px;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-}
-
-.hero-content {
-    text-align: center;
-    max-width: 500px;
-}
-
-.hero-content h1 {
-    font-size: 1.5em;
-    font-weight: normal;
-    margin-top: 0px;
-}
-/* Seção "Quem Somos" (Ajustada) */
 .about-main {
-    padding: 40px 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    .advogados-section {
-        flex-direction: column; /* Muda para coluna em telas pequenas */
-        align-items: center; /* Centraliza os advogados */
-    }
-
-    .advogado {
-        width: 80%; /* Aumenta a largura para telas menores */
-    }
-}
-
-.about-content {
-    background-color: #f0f0f0;
+    background-color: transparent; /* <-- Muda de #f8f8f8 para transparente */
     padding: 40px;
     border-radius: 8px;
-    margin-bottom: 40px;
-}
-.advogados-section {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
 }
 
-.advogado {
-    text-align: center;
-}
 
-.advogado img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-.advogado img:hover {
-    transform: scale(1.05); /* Um efeito de zoom quando o mouse está sobre a imagem */
-    transition: transform 0.3s ease; /* Transição suave */
-}
-
-.advogado h3 {
-    margin: 10px 0;
-    color: #000;
-}
-
-.advogado p {
-    text-align: justify; /* Justifica o texto dos advogados */
-}
-
-.about-text h2, .equipe-texto h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #000;
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
-.equipe-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.equipe-texto {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.equipe-texto p {
-    text-align: justify; /* Justifica o texto "Nossa Equipe" */
-}
-
-.equipe-imagem img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #000;
-    padding: 10px;
-}
-
-.about-content p {
-    line-height: 1.6;
-    color: #333;
-    text-align: justify; /* Justifica os parágrafos "QUEM SOMOS" */
-}
-
-/* Seção "Quem Somos" (Ajustada) */
-.about-main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.about-content {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombreamento */
-}
-
-.about-content {
-    background-color: #f0f0f0;
-    padding: 40px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-.advogados-section {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.advogado {
-    text-align: center;
-    width: 45%; /* Ajuste a largura conforme necessário */
-    border: 2px solid #000; /* Adiciona uma moldura cinza */
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px;
-}
-
-.advogado img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.advogado h3 {
-    margin: 10px 0;
-    color: #000;
-}
-
-.advogado p {
-    text-align: justify;
-    margin-bottom: 15px; /* Adiciona espaço entre os parágrafos */
-}
-
-.about-text h2, .equipe-texto h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #000;
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
-.equipe-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.equipe-texto {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.equipe-texto p {
-    text-align: justify;
-}
-
-.equipe-imagem img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #000;
-    padding: 10px;
-}
-
-.about-content p {
-    line-height: 1.4;
-    color: #000;
-    text-align: justify;
-}
-/* Seção "Nossos Serviços" */
-.servicos-section {
-    background-color: #f0f0f0;
-    padding: 40px 20px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.servicos-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.servicos-content h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    color: #000;
-}
-
-.servico {
-    border-top: 1px solid #000;
-    padding: 40px 20px;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.servico h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.servico p {
-    line-height: 1.6;
-    color: #000;
-}
-/* Rodapé */
-footer {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    width: 90%;
-}
-
-.footer-section {
-    width: 30%;
-    text-align: center;
-    position: relative;
-}
-
-.footer-section h3 {
-    margin-bottom: 10px;
-}
-
-.footer-section:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 80%;
-    background-color: var(--white);
-}
-
-.footer-bottom {
-    margin-top: 20px;
-}
-
-.footer-bottom a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-/* Ajuste para navegação no celular */
-@media (max-width: 768px) {
-    .top-nav ul {
-        flex-direction: column; /* Torna o menu vertical */
-        align-items: center;
-    }
-
-    .top-nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .top-nav ul li a {
-        display: block;
-        width: 100%;
-        padding: 15px 0;
-    }
-
-    .logo h1 {
-        font-size: 2.5em; /* Reduz tamanho da logo */
-    }
-
-    .advogados-section {
-        flex-direction: column; /* Deixa advogados empilhados */
-        align-items: center;
-    }
-
-    .advogado {
-        width: 90%; /* Redimensiona cards dos advogados */
-    }
-
-    .about-content {
-        padding: 20px; /* Reduz espaços */
-    }
-
-    .footer-content {
-        flex-direction: column; /* Deixa o rodapé empilhado */
-        text-align: center;
-    }
-
-    .footer-section {
-        width: 100%; /* Ocupa toda a largura */
-        margin-bottom: 20px;
-    }
-
-    .footer-section:not(:last-child)::after {
-        display: none; /* Remove divisórias no mobile */
-    }
-
-    .contact-icons {
-        bottom: 5px;
-        right: 5px;
-    }
-
-    .contact-icons img {
-        width: 40px; /* Reduz tamanho dos ícones */
-    }
-}
-
-/* Ajustes Gerais para Responsividade */
-body {
-    font-size: 16px; /* Mantém tamanho de texto legível */
-}
-
-img {
-    max-width: 100%; /* Impede que imagens saiam da tela */
-    height: auto;
-}
-
-/* Efeito de zoom nos ícones ao passar o mouse */
-.contact-icons img {
-    width: 50px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.contact-icons img:hover {
-    transform: scale(1.05);
-}
-
-.contact-icons img:active {
-    transform: scale(1.1);
-}
-
-/* Efeito de zoom nos botões ao passar o mouse */
-.top-nav ul li a {
-    transition: transform 0.3s ease;
-}
-
-.top-nav ul li a:hover {
-    transform: scale(1.05);
-}
-
-/* Se quiser efeito ao clicar no botão */
-.top-nav ul li a:active {
-    transform: scale(1.1);
-}
-
-.section-divider {
-    border: none;
-    border-top: 1px solid #000; /* Cor preta */
-    margin: 40px 0;
-    width: 100%;
-}
 .about-content h2 {
-    text-align: center; /* Centraliza o texto */
-    color: black; /* Define a cor preta */
-    font-weight: bold; /* Mantém a ênfase no texto */
-    text-transform: uppercase; /* Mantém o texto em maiúsculas */
-    margin-bottom: 20px; /* Ajusta o espaçamento */
-    font-size: 32px; /* Ajuste conforme necessário para igualar ao outro título */
-
-}
-
-.advogado p {
-    text-align: center; /* Centraliza o texto */
-    font-size: 16px; /* Ajuste o tamanho conforme necessário */
-    margin-bottom: 10px; /* Espaço antes do ícone do WhatsApp */
-}
-.advogado a {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.advogado a img {
-    width: 40px;  /* Ajuste para o tamanho desejado */
-    height: 40px; /* Mantém a proporção */
-}
-
-.coluna {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Espaço entre os links */
-}
-
-.coluna a {
-    text-decoration: none;
-    font-size: 18px;
+    text-align: center;
+    color: var(--black);
     font-weight: bold;
-    color: #000; /* Cor do texto */
-    padding: 10px;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
 }
 
-.coluna a:hover {
-    background-color: #ddd;
-    color: #000; /* Muda a cor ao passar o mouse */
+.about-content p {
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.8;
+    color: var(--text-color);
 }
 
-/* Ajuste dos ícones de contato */
-.contact-icons {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    gap: 10px;
-}
-
-.contact-icons a img {
-    width: 50px;
-    height: 50px;
-}
-
-/* Layout de Serviços */
-.servicos-section {
-    text-align: center;
-    padding: 40px;
-}
-
-.servicos-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.servico-item {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.servico-item:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-    margin-top: 50px;
-    border-top: 2px solid #ddd;
-}
-
-footer a {
-    text-decoration: none;
-    color: #ddd;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000; /* Alterado para um fundo escuro */
-    color: white; /* Garante que o texto fique visível */
-    margin-top: 50px;
-    border-top: 2px solid #ddd;
-}
-
-.footer-content {
+.advogados-section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    margin: 20px 0;
 }
 
-.footer-section h3 {
+.advogado {
+    text-align: center;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--brack);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.advogado img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
-.footer-bottom {
-    margin-top: 10px;
+.advogado h3 {
+    color: var(--black);
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-transform: uppercase;
 }
 
-.footer-bottom a {
-    color: #f8f8f8;
-    text-decoration: none;
+.advogado p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin: 5px 0;
+    text-align: justify;
 }
 
-.footer-bottom a:hover {
-    text-decoration: underline;
-}
 .areas-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    margin: 40px 0;
+    padding: 20px;
 }
 
 .areas-atuacao {
-    text-align: center;
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: bold;
+    text-transform: uppercase;
+    color: var(--black);
     margin-bottom: 20px;
-    width: 100%;
 }
 
 .areas-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Define duas colunas */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
-    width: 80%; /* Ajuste a largura conforme necessário */
-    max-width: 900px;
+    max-width:700px;
+    margin: 0 auto;
 }
 
-.areas-grid a {
-    background: #f8f8f8;
+.areas-grid div {
+    background: var(--white);
     padding: 10px;
-    text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: bold;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.areas-grid div:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer {
     text-align: center;
-    display: block;
-}
-
-
-.contato {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaço entre ícone e texto */
-    margin: 5px 0;
-}
-
-.contato a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-}
-
-.contato img {
-    width: 20px;
-    height: 20px;
-}
-
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 0px;
+    border-top: 2px solid #ddd;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-    border-top: 1px solid white;
-    max-width: 1000px;
-    margin: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .footer-section {
     flex: 1;
     padding: 10px;
+    text-align: center;
 }
 
 .footer-section h3 {
     border-bottom: 2px solid white;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 .contato {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 10px;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .contato a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .contato img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%; /* Deixa o ícone redondo */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.contato img:hover {
+    transform: scale(1.1);
 }
 
 .voltar-topo {
     margin-top: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-weight: bold;
-    display: block;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Ajuste para telas menores */
+.voltar-topo:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transform: scale(1.05);
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.contact-icons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column; /* <-- IMPORTANTE: de linha para coluna */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icons a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons a img:hover {
+    transform: scale(1.05);
+}
+
+.contact-icons a img:active {
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    header h2::before,
+    header h2::after {
+        width: 200px;
+    }
+
+    .advogados-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advogado {
+        width: 90%;
+    }
+
+    .advogado img {
+        max-width: 200px;
+    }
+
     .footer-container {
         flex-direction: column;
-        text-align: center;
     }
 
     .contato {
@@ -797,4 +340,36 @@ body {
     }
 }
 
+.contato-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--background-color);
+}
 
+.card {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #000;
+    font-weight: bold;
+}

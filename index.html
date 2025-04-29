@@ -12,6 +12,11 @@
     <link rel="icon" href="vs.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="b18ef6d28ad7a2a8" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle com JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
@@ -45,42 +50,84 @@
             </div>
         </div>
     </header>
-
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Lute por seus direitos trabalhistas com advogados especializados na área trabalhista!</h2>
-            </div>
-        </section>
         <section class="about-main">
             <div class="about-content">
-                <h2>Quem Somos</h2>        
+                <h3>Quem Somos</h3>        
                 <div class="advogados-section">
                     <div class="advogado">
-                        <img src="joao.png" alt="Foto do Dr. João Eduardo Viegas da Silva">
+                        <img src="joao.jpg" alt="Dr. João Eduardo Viegas da Silva">
                         <h3>Dr. João Eduardo Viegas da Silva</h3>
                         <p>OAB-RS 19532</p>
                         <p>Sócio administrador</p>
                     </div>
                     <div class="advogado">
-                        <img src="sonia.png" alt="Foto da Dra. Sonia Mara Kilppe Viegas da Silva">
+                        <img src="sonia.jpg" alt="Dra. Sonia Mara Kilppe Viegas da Silva">
                         <h3>Dra. Sonia Mara Kilppe Viegas da Silva</h3>
                         <p>OAB-RS 76751</p>
                         <p>Sócia administradora</p>
                     </div>
-                </div>
-            
+                </div>            
                 <div class="about-text">
                     <h3>Nossa Equipe</h3>
                     <p>O escritório Viegas e Silva foi fundado em 1985, pelo Advogado sócio proprietário Dr João Eduardo Viegas da Silva (hoje 40 anos de experiência na área trabalhista). Em 2008 sua esposa Dra Sônia Viegas, ingressou na sociedade onde já trabalhava desde 2004. Uma parceria que vem dando muito certo. Atualmente nossa equipe é formada por mais sete advogados (Dra Cláudia, Dra Eunice, Dra Joana, Dra Caroline, Dra Têmis, Dr Lucca e Dra Ana. Também temos mais três colaboradores, sendo nosso financeiro Lucas e dois Assistentes Jurídicos Camily e Davi. Contamos ainda com colaboradores autônomos como técnicos de informática, calculistas, auxiliar de limpeza, contabilidade e eventual advogado autônomo para audiência específica.</p>
                     <p>Exclusivamente na área trabalhista, priorizando nossa especialidade na área. Quase todos os advogados da equipe possuem Pós Graduação em Direito do Trabalho e Processo do Trabalho. Constantemente estamos nos aperfeiçoando com cursos práticos e atualizações das leis e jurisprudências do nosso Tribunal. Nossa missão é fazer o melhor por aqueles que confiam uma procuração à nossa equipe. </p>
                     <p>Hoje nosso escritório é um dos maiores, senão o maior da cidade de Canoas-RS, na especialidade dos Direitos Trabalhistas.</p>
                 </div>        
-                <div class="equipe-section">
-                    <div class="equipe-imagem">
-                        <img src="equipe.png" alt="Imagem da nossa equipe de advogados">
+                
+                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="7" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="8" aria-label="Slide 8"></button>
                     </div>
-                </div>
+                  
+                    <!-- Imagens do Carrossel -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="imagem1.jpg" class="d-block w-100" alt="Imagem 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagem2.jpg" class="d-block w-100" alt="Imagem 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagem3.jpg" class="d-block w-100" alt="Imagem 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagem4.jpg" class="d-block w-100" alt="Imagem 4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagem5.jpg" class="d-block w-100" alt="Imagem 5">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagem6.jpg" class="d-block w-100" alt="Imagem 6">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagem7.jpg" class="d-block w-100" alt="Imagem 7">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagem8.jpg" class="d-block w-100" alt="Imagem 8">
+                      </div>
+                    </div>
+                  
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Próximo</span>
+                    </button>
+                  </div>
+
                 <section class="areas-container">
                     <hr class="section-divider">
                     <h3 class="areas-atuacao">Áreas de Atuação</h3>
@@ -130,7 +177,12 @@
                     </a>
                 </div>
             </div>
-
+                <!-- Atendimento -->
+                <div class="footer-section">
+                    <h3>Atendimento</h3>
+                    <p>Segunda a Sexta</p> 
+                    <p>8:00h/12:00h - 13:15h/18:00h</p>
+                </div>
             <!-- Endereço -->
             <div class="footer-section">
                 <h3>Endereço</h3>
@@ -139,14 +191,8 @@
                 <p>Avenida Rio Grande do Sul 455, sala 01 (2º andar).</p>
                 <p>Avenida Rio Grande do Sul 465 (Térreo).</p>
             </div>
-
-            <!-- Atendimento -->
-            <div class="footer-section">
-                <h3>Atendimento</h3>
-                <p>Segunda a Sexta: 8:00h/12:00h - 13:15h/18:00h</p>
-            </div>
         </div>
-
+    
         <!-- Voltar ao topo -->
         <a href="#" class="voltar-topo">Voltar ao topo</a>
     </footer>
