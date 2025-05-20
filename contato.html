@@ -1,133 +1,304 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Viegas e Silva Advogados Associados</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Estilos específicos para o mapa */
-        .map-section {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        
-        .map-container {
-            height: 500px;
-            width: 100%;
-            border-radius: 8px;
-            border: 2px solid #d2b48c;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        .map-actions {
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .btn-directions {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background-color: #d2b48c;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-directions:hover {
-            background-color: #c0a070;
-            transform: translateY(-2px);
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Viegas e Silva Advogados Associados</title>
+  <meta name="description" content="Escritório de advocacia trabalhista especializado em direitos trabalhistas e previdenciários.">
+  <meta name="keywords" content="advogados, direito, justiça, direitos trabalhistas, advocacia trabalhista">
+  <meta name="author" content="Pedro Gonçalves">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="vs.png" type="image/x-icon">
+  <meta name="google-site-verification" content="b18ef6d28ad7a2a8">
 
-        /* Estilo de fallback */
-        .map-fallback {
-            text-align: center;
-            padding: 40px;
-            background-color: #f8f8f8;
-            border-radius: 8px;
-            border: 2px solid #d2b48c;
-        }
-    </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Bundle com JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Estilos específicos para o mapa */
+    .map-container {
+      height: 500px;
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #d2b48c;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin: 30px 0;
+    }
+    
+    .contato-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px 0;
+    }
+    
+    .contato-card {
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .contato-card:hover {
+      transform: scale(1.05);
+    }
+    
+    .contato-card i {
+      font-size: 2.5rem;
+      color: #d2b48c;
+      margin-bottom: 15px;
+    }
+    
+    .contato-card p {
+      color: #000;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    /* Estilos para o carrossel */
+    .carousel-section {
+      margin: 40px 0;
+    }
+    
+    .carousel {
+      border: 2px solid #d2b48c;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+    
+    .intro-text {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      border-left: 4px solid #d2b48c;
+    }
+  </style>
 </head>
 <body>
-    <!-- Ícones flutuantes -->
-    <div class="contact-icons">
-        <a href="https://wa.me/+555199436649" target="_blank" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://www.instagram.com/viegasesilvadv" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://maps.app.goo.gl/Sn8tzFJMLJzSUi3g8" target="_blank" aria-label="Maps">
-            <i class="fas fa-map-marker-alt"></i>
-        </a>
+  <div class="contact-icons">
+    <a href="https://wa.me/555199436649" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/viegasesilvadv" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://storage.googleapis.com/maps-solutions-m8w1y9t5by/locator-plus/69t6/locator-plus.html" target="_blank" aria-label="Google Maps">
+      <i class="fas fa-map-marker-alt"></i>
+    </a>
+  </div>
+
+  <header class="shadow-sm">
+    <nav class="top-nav container-lg">
+      <ul class="nav justify-content-center gap-3 py-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Quem Somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Opções de Contato</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-light px-3" href="https://wa.me/555199436649" target="_blank">
+            Agende um horário
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="logo container-lg py-3">
+      <h1 class="display-5 m-0">Viegas e Silva</h1>
+      <div class="logo-divider my-2"></div>
+      <h2 class="h5 fw-normal text-uppercase m-0">Advogados Associados</h2>
     </div>
+  </header>
 
-    <!-- Cabeçalho -->
-    <header class="shadow-sm">
-        <nav class="top-nav container-lg">
-            <ul class="nav justify-content-center gap-3 py-2">
-                <li class="nav-item"><a class="nav-link" href="index.html">Quem Somos</a></li>
-                <li class="nav-item"><a class="nav-link" href="contato.html">Opções de Contato</a></li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-light px-3" href="https://wa.me/555199436649" target="_blank">
-                        Agende um horário
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="logo container-lg py-3">
-            <h1 class="display-5 m-0">Viegas e Silva</h1>
-            <div class="logo-divider my-2"></div>
-            <h2 class="h5 fw-normal text-uppercase m-0">Advogados Associados</h2>
+  <main>
+    <section class="about-main">
+      <div class="about-content">
+        <!-- Texto introdutório -->
+        <div class="intro-text">
+          <h3>VISITE NOSSO ESCRITÓRIO</h3>
+          <p>Estamos localizados no coração de Canoas-RS, no Bairro Mathias Velho, em um espaço projetado para oferecer o melhor atendimento e conforto aos nossos clientes. Nossas instalações refletem a seriedade e profissionalismo que marcam nossa atuação há mais de 40 anos no Direito Trabalhista.</p>
+          <p>Conheça através das imagens abaixo nosso ambiente acolhedor e estrutura completa, onde cada detalhe foi pensado para proporcionar a melhor experiência durante sua visita. Nossa equipe está pronta para recebê-lo com todo o cuidado e atenção que seu caso merece.</p>
         </div>
-    </header>
 
-    <main>
-        <!-- Seção do Mapa com Iframe -->
-        <section class="map-section">
-            <h3 class="text-center mb-4">NOSSA LOCALIZAÇÃO</h3>
-            <div class="map-container">
-                <!-- Iframe do Google Maps -->
-                <iframe src="https://storage.googleapis.com/maps-solutions-m8w1y9t5by/locator-plus/0ja7/locator-plus.html"
-                    width="100%" height="100%"
-                    style="border:0;"
-                    loading="lazy">
-                 </iframe>
-                                </div>
-            <div class="map-actions">
-                <a href="https://maps.app.goo.gl/Sn8tzFJMLJzSUi3g8" target="_blank" class="btn-directions">
-                    <i class="fas fa-route"></i> Obter Rotas no Google Maps
-                </a>
+        <!-- Carrossel de imagens do escritório -->
+        <div class="carousel-section">
+          <div id="officeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             
-            <!-- Fallback caso o iframe não carregue -->
-            <noscript>
-                <div class="map-fallback">
-                    <i class="fas fa-map-marked-alt fa-3x" style="color: #d2b48c;"></i>
-                    <h4>Viegas e Silva Advogados Associados</h4>
-                    <p>Av. Rio Grande do Sul, 455 - Mathias Velho</p>
-                    <p>Canoas - RS, 92330-000</p>
-                    <a href="https://maps.app.goo.gl/Sn8tzFJMLJzSUi3g8" target="_blank" class="btn-directions">
-                        <i class="fas fa-external-link-alt"></i> Abrir no Google Maps
-                    </a>
-                </div>
-            </noscript>
-        </section>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="escritorio1.jpg" class="d-block w-100" alt="Recepção do escritório">
+              </div>
+              <div class="carousel-item">
+                <img src="escritorio2.jpg" class="d-block w-100" alt="Sala de reuniões">
+              </div>
+              <div class="carousel-item">
+                <img src="escritorio3.jpg" class="d-block w-100" alt="Área de trabalho dos advogados">
+              </div>
+              <div class="carousel-item">
+                <img src="escritorio4.jpg" class="d-block w-100" alt="Fachada do escritório">
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#officeCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#officeCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
 
-        <!-- Restante do seu conteúdo permanece igual -->
-        <!-- ... suas seções de contato, cards, etc ... -->
-    </main>
+        <!-- Seção do Mapa -->
+        <div class="map-section">
+          <h3 class="text-center mb-4">NOSSA LOCALIZAÇÃO</h3>
+          <div class="map-container">
+            <iframe src="https://storage.googleapis.com/maps-solutions-m8w1y9t5by/locator-plus/69t6/locator-plus.html"
+              width="100%" 
+              height="100%"
+              style="border:0;"
+              loading="lazy"
+              title="Localização do Escritório Viegas e Silva">
+            </iframe>
+          </div>
+          <div class="text-center mt-3">
+            <a href="https://storage.googleapis.com/maps-solutions-m8w1y9t5by/locator-plus/69t6/locator-plus.html" target="_blank" class="btn btn-outline-dark">
+              <i class="fas fa-route"></i>Verifique as rotas</a>
+          </div>
+        </div>
 
-    <!-- Seu rodapé permanece igual -->
+        <hr class="section-divider">
+
+        <!-- Seção de Contatos -->
+        <div class="about-text">
+          <h3 class="text-center">CONTATE-NOS</h3>
+          <div class="contato-cards">
+            <div class="contato-card">
+              <a href="https://wa.me/5551999436649" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <p>WhatsApp Geral</p>
+                <small>(51) 99943-6649</small>
+              </a>
+            </div>
+            
+            <div class="contato-card">
+              <a href="https://wa.me/5551999997033" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <p>Dra. Sonia</p>
+                <small>(51) 99999-7033</small>
+              </a>
+            </div>
+            
+            <div class="contato-card">
+              <a href="https://wa.me/5551999733755" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <p>Dr. João</p>
+                <small>(51) 99973-3755</small>
+              </a>
+            </div>
+            
+            <div class="contato-card">
+              <a href="tel:+5551999436649">
+                <i class="fas fa-phone"></i>
+                <p>Telefone</p>
+                <small>(51) 99943-6649</small>
+              </a>
+            </div>
+            
+            <div class="contato-card">
+              <a href="mailto:advtrabalhista4552@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <p>E-mail</p>
+                <small>advtrabalhista4552@gmail.com</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer> 
+    <div class="footer-container"> 
+      <!-- Contatos --> 
+      <div class="footer-section"> 
+        <h3>Contatos</h3> 
+        <div class="contato"> 
+          <a href="mailto:advtrabalhista4552@gmail.com"> 
+            <i class="fas fa-envelope"></i> advtrabalhista4552@gmail.com 
+          </a> 
+        </div> 
+        <div class="contato"> 
+          <a href="https://wa.me/5551999436649" target="_blank"> 
+            <i class="fab fa-whatsapp"></i> (51) 99943-6649 – Geral 
+          </a> 
+        </div> 
+        <div class="contato"> 
+          <a href="https://wa.me/5551999997033" target="_blank"> 
+            <i class="fab fa-whatsapp"></i> (51) 99999-7033 – Dra Sonia 
+          </a> 
+        </div> 
+        <div class="contato"> 
+          <a href="https://wa.me/5551999733755" target="_blank"> 
+            <i class="fab fa-whatsapp"></i> (51) 99973-3755 – Dr João 
+          </a> 
+        </div> 
+        <div class="contato">
+          <a href="https://wa.me/5551999597033" target="_blank">
+            <i class="fab fa-whatsapp"></i> (51) 99959-7033 – Acessibilidade
+          </a>
+        </div>
+      </div>
+
+      <!-- Endereço -->
+      <div class="footer-section">
+        <h3>Endereço</h3>
+        <p>Localizado em Canoas-RS, no Bairro Mathias Velho</p>
+        <p>Avenida Rio Grande do Sul 455, sala 01 (2º andar).</p>
+        <p>Avenida Rio Grande do Sul 465 (Térreo).</p>
+        <a href="https://storage.googleapis.com/maps-solutions-m8w1y9t5by/locator-plus/69t6/locator-plus.html" target="_blank" class="btn btn-outline-light mt-2">
+          <i class="fas fa-map-marker-alt"></i> Ver no mapa
+        </a>
+      </div>
+
+      <!-- Atendimento -->
+      <div class="footer-section">
+        <h3>Atendimento</h3>
+        <p>Segunda a Sexta</p>
+        <p>8:00h às 12:00h</p>
+        <p>13:15h às 18:00h</p>
+      </div>
+    </div>
+
+    <!-- Voltar ao topo -->
+    <a href="#" class="voltar-topo">
+      <i class="fas fa-arrow-up"></i> Voltar ao topo
+    </a>
+
+    <!-- Direitos autorais -->
+    <div class="copyright">
+      <p>&copy; 2023 Viegas e Silva Advogados Associados. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
