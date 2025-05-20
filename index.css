@@ -14,14 +14,13 @@ body {
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-    text-align: center;
 }
 
 header {
     color: var(--white);
     background-color: var(--black);
     text-align: center;
-    padding: 60px;
+    padding: 60px 0;
 }
 
 header h1 {
@@ -36,17 +35,6 @@ header h2 {
     color: var(--white);
     position: relative;
     padding: 8px;
-}
-
-header h2::before,
-header h2::after {
-    content: "";
-    display: inline-block;
-    width: 200px;
-    height: 2px;
-    background-color: var(--white);
-    vertical-align: middle;
-    margin: 0 15px;
 }
 
 .header-divider,
@@ -82,18 +70,16 @@ header h2::after {
 .top-nav ul li a:hover {
     background-color: var(--white);
     color: var(--black);
-    transition: transform 0.3s ease;
     transform: scale(1.05);
-
 }
+
 .about-main {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: transparent; /* <-- Muda de #f8f8f8 para transparente */
+    background-color: transparent;
     padding: 40px;
     border-radius: 8px;
 }
-
 
 .about-content h2 {
     text-align: center;
@@ -101,7 +87,6 @@ header h2::after {
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
-    
 }
 
 .about-content p {
@@ -125,7 +110,7 @@ header h2::after {
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    background-color: var(--brack);
+    background-color: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -149,7 +134,7 @@ header h2::after {
     color: var(--text-color);
     font-size: 0.9rem;
     margin: 5px 0;
-    text-align: justify;
+    text-align: center;
 }
 
 .areas-container {
@@ -168,15 +153,15 @@ header h2::after {
 
 .areas-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-    max-width:700px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.areas-grid div {
+.area-item {
     background: var(--white);
-    padding: 10px;
+    padding: 12px;
     color: var(--text-color);
     font-weight: bold;
     border-radius: 5px;
@@ -184,16 +169,9 @@ header h2::after {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.areas-grid div:hover {
+.area-item:hover {
     background-color: #f0f0f0;
     transform: scale(1.05);
-}
-
-.about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
 }
 
 footer {
@@ -216,12 +194,13 @@ footer {
 
 .footer-section {
     flex: 1;
-    padding: 10px;
+    min-width: 250px;
+    padding: 15px;
     text-align: center;
 }
 
 .footer-section h3 {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--white);
     padding-bottom: 5px;
     margin-bottom: 10px;
     font-size: 1.2rem;
@@ -244,14 +223,17 @@ footer {
     gap: 5px;
 }
 
-.contato img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+.footer-section .contato a i {
+    color: #25D366;
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 
-.contato img:hover {
+.footer-section .contato a:hover {
+    color: #25D366;
+}
+
+.footer-section .contato a:hover i {
     transform: scale(1.1);
 }
 
@@ -273,103 +255,166 @@ footer {
     transform: scale(1.05);
 }
 
-.carousel-inner img {
-    height: 500px;
-    object-fit: cover;
+/* CARROSSEL - VERSÃO OTIMIZADA */
+.carousel-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
     border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.contact-icons {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 9999;
+.carousel-inner {
     display: flex;
-    flex-direction: column; /* <-- IMPORTANTE: de linha para coluna */
+    transition: transform 0.5s ease;
+    height: 500px; /* Altura fixa */
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-img-container {
+    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5; /* Cor de fundo para imagens menores */
+}
+
+.carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Mantém proporção sem cortes */
+    margin: 0 auto;
+}
+
+/* Controles de navegação */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 15px;
+}
+
+.carousel-control.next {
+    right: 15px;
+}
+
+/* Indicadores */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
     gap: 10px;
 }
 
-.contact-icons a img {
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.carousel-indicator.active {
+    background: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .carousel-container {
+        border-radius: 0;
+    }
+    
+    .carousel-inner {
+        height: 350px;
+    }
+}
+.contact-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.contact-icons a {
     width: 50px;
     height: 50px;
-    transition: transform 0.3s ease;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .25);
+    transition: transform 0.25s ease;
+    text-decoration: none;
 }
 
-.contact-icons a img:hover {
-    transform: scale(1.05);
+.contact-icons a i {
+    font-size: 24px;
+    color: white;
 }
 
-.contact-icons a img:active {
-    transform: scale(1.1);
+.contact-icons a:nth-child(1) { background-color: #25D366; } /* WhatsApp */
+.contact-icons a:nth-child(2) { background-color: #E1306C; } /* Instagram */
+.contact-icons a:nth-child(3) { background-color: #4285F4; } /* Google Maps */
+
+.contact-icons a:hover {
+    transform: scale(1.15);
 }
 
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5rem;
     }
-
     header h2 {
         font-size: 1.5rem;
     }
-
-    header h2::before,
-    header h2::after {
-        width: 200px;
-    }
-
     .advogados-section {
         flex-direction: column;
         align-items: center;
     }
-
     .advogado {
         width: 90%;
     }
-
-    .advogado img {
-        max-width: 200px;
+    .carousel-inner img {
+        height: 300px;
     }
-
     .footer-container {
         flex-direction: column;
-    }
-
-    .contato {
-        justify-content: center;
+        align-items: center;
     }
 }
 
-.contato-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    background-color: var(--background-color);
-}
-
-.card {
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 10px;
-    width: 150px;
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #000;
-    font-weight: bold;
+@media (max-width: 576px) {
+    .logo h1 {
+        font-size: 2.2rem;
+    }
+    .top-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .carousel-inner img {
+        height: 250px;
+    }
 }

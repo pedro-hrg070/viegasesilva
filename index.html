@@ -1,199 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viegas e Silva Advogados Associados</title>
-    <meta name="description" content="Escritório de advocacia trabalhista especializado em direitos trabalhistas e previdenciários.">
-    <meta name="keywords" content="advogados, direito, justiça, direitos trabalhistas, advocacia trabalhista">
-    <meta name="author" content="Pedro Gonçalves">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="vs.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="b18ef6d28ad7a2a8" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viegas e Silva Advogados Associados</title>
+  <meta name="description" content="Escritório de advocacia trabalhista especializado em direitos trabalhistas e previdenciários.">
+  <meta name="keywords" content="advogados, direito, justiça, direitos trabalhistas, advocacia trabalhista">
+  <meta name="author" content="Pedro Gonçalves">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="vs.png" type="image/x-icon">
+  <meta name="google-site-verification" content="b18ef6d28ad7a2a8">
 
-    <!-- Bootstrap Bundle com JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Bundle com JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="contact-icons">
-        <a href="https://wa.me/+555199436649" class="whatsapp-icon" target="_blank" aria-label="WhatsApp">
-            <img src="whatsapp-icon.png" alt="Ícone do WhatsApp" width="60" height="60">
+  <div class="contact-icons">
+    <a href="https://wa.me/555199436649" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/viegasesilvadv" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://maps.app.goo.gl/Sn8tzFJMLJzSUi3g8" target="_blank" aria-label="Google Maps">
+      <i class="fas fa-map-marker-alt"></i>
+    </a>
+  </div>
+
+  <header class="shadow-sm">
+    <nav class="top-nav container-lg">
+      <ul class="nav justify-content-center gap-3 py-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Quem Somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Opções de Contato</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-light px-3" href="https://wa.me/555199436649" target="_blank">
+            Agende um horário
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="logo container-lg py-3">
+      <h1 class="display-5 m-0">Viegas e Silva</h1>
+      <div class="logo-divider my-2"></div>
+      <h2 class="h5 fw-normal text-uppercase m-0">Advogados Associados</h2>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-main">
+      <div class="about-content">
+        <div class="advogados-section">
+          <div class="advogado">
+            <img src="joao.jpg" alt="Dr. João Eduardo Viegas da Silva - Sócio administrador">
+            <h3>Dr. João Eduardo Viegas da Silva</h3>
+            <p>OAB-RS 19532</p>
+            <p>Sócio administrador</p>
+          </div>
+          <div class="advogado">
+            <img src="sonia.jpg" alt="Dra. Sonia Mara Klippe Viegas da Silva - Sócia administradora">
+            <h3>Dra. Sonia Mara Klippe Viegas da Silva</h3>
+            <p>OAB-RS 76751</p>
+            <p>Sócia administradora</p>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h3>QUEM SOMOS</h3>
+          <p>Viegas e Silva - Advogados Associados teve sua fundação em 1985 pelo Advogado sócio proprietário Dr. João Eduardo Viegas da Silva. Hoje já são 40 anos de experiência na área trabalhista. Desde 2004 a direção do escritório conta com a participação da dra. Sonia Viegas, esposa do dr. João e também sócia administradora do escritório. Tal parceria foi fundamental para o sucesso e estabilidade na condução da administração.</p>
+          <p>O Viegas e Silva – Advogados Associados tem como missão a excelência no atendimento ao cliente e o zelo com o processo desde seu início até o final. Cada procuração confiada à nossa equipe é vista como uma oportunidade de honrar o cliente com a prestação de um trabalho humanizado e altamente profissional.</p>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Carrossel de imagens -->
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagem1.jpg" class="d-block w-100" alt="Imagem do escritório 1">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem2.jpg" class="d-block w-100" alt="Imagem do escritório 2">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem3.jpg" class="d-block w-100" alt="Imagem do escritório 3">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem4.jpg" class="d-block w-100" alt="Imagem do escritório 4">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem5.jpg" class="d-block w-100" alt="Imagem do escritório 5">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem6.jpg" class="d-block w-100" alt="Imagem do escritório 6">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem7.jpg" class="d-block w-100" alt="Imagem do escritório 7">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem8.jpg" class="d-block w-100" alt="Imagem do escritório 8">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+
+        <hr class="section-divider">
+
+        <div class="about-text">
+          <h3>NOSSA EQUIPE</h3>
+          <p>Atualmente, além do dr. João e da Dra. Sonia, a equipe conta com mais sete advogados: Dra. Cláudia, Dra. Eunice, Dra. Joana, Dra. Carolina, Dra. Têmis e Dra. Ana, que em conjunto com os Assistentes Jurídicos, Camily e Davi, formam o time que presta atendimento específico na área jurídica. O setor financeiro é de responsabilidade do colaborador Lucas.</p>
+          <p>O escritório conta ainda com profissionais autônomos na área de informática, cálculos processuais, auxiliar de limpeza, contabilidade e advogado autônomo especialista em audiências.</p>
+          <p>A atuação exclusiva com o direito trabalhista permite que a equipe seja especialista na área. Razão pela qual o grupo de advogados segue em constante aperfeiçoamento através de cursos de Pós graduação, atualizações jurídicas e cursos que visam atualizações junto aos tribunais superiores.</p>
+          <p>Todo esse esforço fez com que o Viegas e Silva – Advogados Associados seja hoje um escritório reconhecido em toda a cidade e região metropolitana como sinônimo de confiança e credibilidade, atributos que são reforçados pelo elevado número de processos que resultaram em satisfação do cliente.</p>
+        </div>
+
+        <section class="areas-container"> 
+          <h3 class="areas-atuacao">Áreas de Atuação</h3> 
+          <div class="areas-grid"> 
+            <div class="area-item">Contencioso Judicial Trabalhista</div> 
+            <div class="area-item">Acordos Trabalhistas</div> 
+            <div class="area-item">Acidente e Doença Ocupacional</div> 
+            <div class="area-item">Direito Trabalhista</div> 
+            <div class="area-item">Estabilidade: Acidentária e Gestante</div> 
+            <div class="area-item">Execuções (Empresas Falidas)</div> 
+            <div class="area-item">Horas Extras Caminhoneiros e Outras</div> 
+            <div class="area-item">Vínculo de Emprego</div> 
+            <div class="area-item">Verbas Rescisórias</div> 
+            <div class="area-item">Insalubridade / Periculosidade</div> 
+            <div class="area-item">Fraudes dos Contratos de Trabalho</div> 
+            <div class="area-item">Nulidade do Contrato PJ e Pedido de Vínculo</div> 
+          </div> 
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer> 
+    <div class="footer-container"> 
+      <!-- Contatos --> 
+      <div class="footer-section"> 
+        <h3>Contatos</h3> 
+        <div class="contato"> 
+          <a href="mailto:advtrabalhista4552@gmail.com"> 
+            <i class="fas fa-envelope"></i> advtrabalhista4552@gmail.com 
+          </a> 
+        </div> 
+        <div class="contato"> 
+          <a href="https://wa.me/5551999436649" target="_blank"> 
+            <i class="fab fa-whatsapp"></i> (51) 99943-6649 – Geral 
+          </a> 
+        </div> 
+        <div class="contato"> 
+          <a href="https://wa.me/5551999997033" target="_blank"> 
+            <i class="fab fa-whatsapp"></i> (51) 99999-7033 – Dra Sonia 
+          </a> 
+        </div> 
+        <div class="contato"> 
+          <a href="https://wa.me/5551999733755" target="_blank"> 
+            <i class="fab fa-whatsapp"></i> (51) 99973-3755 – Dr João 
+          </a> 
+        </div> 
+        <div class="contato">
+          <a href="https://wa.me/5551999597033" target="_blank">
+            <i class="fab fa-whatsapp"></i> (51) 99959-7033 – Accessibilidade
+          </a>
+        </div>
+      </div>
+
+      <!-- Endereço -->
+      <div class="footer-section">
+        <h3>Endereço</h3>
+        <p>Localizado em Canoas-RS, no Bairro Mathias Velho</p>
+        <p>Avenida Rio Grande do Sul 455, sala 01 (2º andar).</p>
+        <p>Avenida Rio Grande do Sul 465 (Térreo).</p>
+        <a href="https://maps.app.goo.gl/Sn8tzFJMLJzSUi3g8" target="_blank" class="btn btn-outline-light mt-2">
+          <i class="fas fa-map-marker-alt"></i> Ver no mapa
         </a>
-        <a href="https://www.instagram.com/viegasesilvadv" class="instagram-icon" target="_blank" aria-label="Instagram">
-            <img src="instagram-icon.png" alt="Ícone do Instagram" width="60" height="60">
-        </a>
-        <a href="https://maps.app.goo.gl/Sn8tzFJMLJzSUi3g8" class="map-icon" target="_blank" aria-label="Localização no Google Maps">
-            <img src="maps.icon.png" alt="Ícone do Google Maps" width="60" height="60">
-        </a>
+      </div>
+
+      <!-- Atendimento -->
+      <div class="footer-section">
+        <h3>Atendimento</h3>
+        <p>Segunda a Sexta</p>
+        <p>8:00h às 12:00h</p>
+        <p>13:15h às 18:00h</p>
+      </div>
     </div>
 
-    <header>
-        <nav class="top-nav">
-            <ul>
-                <li><a href="index.html">Quem Somos</a></li>
-                <li><a href="contato.html">Opções de Contato</a></li>
-                <li><a href="https://wa.me/+555199436649" class="agendamento">Agende um horário</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <h1>Viegas e Silva</h1>
-            <div class="logo-divider"></div>
-            <div class="associados">
-                <span class="barra-lateral"></span>
-                <h2>| Advogados Associados |</h2>
-                <span class="barra-lateral"></span>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="about-main">
-            <div class="about-content">
-                <h3>Quem Somos</h3>        
-                <div class="advogados-section">
-                    <div class="advogado">
-                        <img src="joao.jpg" alt="Dr. João Eduardo Viegas da Silva">
-                        <h3>Dr. João Eduardo Viegas da Silva</h3>
-                        <p>OAB-RS 19532</p>
-                        <p>Sócio administrador</p>
-                    </div>
-                    <div class="advogado">
-                        <img src="sonia.jpg" alt="Dra. Sonia Mara Kilppe Viegas da Silva">
-                        <h3>Dra. Sonia Mara Kilppe Viegas da Silva</h3>
-                        <p>OAB-RS 76751</p>
-                        <p>Sócia administradora</p>
-                    </div>
-                </div>            
-                <div class="about-text">
-                    <h3>Nossa Equipe</h3>
-                    <p>O escritório Viegas e Silva foi fundado em 1985, pelo Advogado sócio proprietário Dr João Eduardo Viegas da Silva (hoje 40 anos de experiência na área trabalhista). Em 2008 sua esposa Dra Sônia Viegas, ingressou na sociedade onde já trabalhava desde 2004. Uma parceria que vem dando muito certo. Atualmente nossa equipe é formada por mais sete advogados (Dra Cláudia, Dra Eunice, Dra Joana, Dra Caroline, Dra Têmis, Dr Lucca e Dra Ana. Também temos mais três colaboradores, sendo nosso financeiro Lucas e dois Assistentes Jurídicos Camily e Davi. Contamos ainda com colaboradores autônomos como técnicos de informática, calculistas, auxiliar de limpeza, contabilidade e eventual advogado autônomo para audiência específica.</p>
-                    <p>Exclusivamente na área trabalhista, priorizando nossa especialidade na área. Quase todos os advogados da equipe possuem Pós Graduação em Direito do Trabalho e Processo do Trabalho. Constantemente estamos nos aperfeiçoando com cursos práticos e atualizações das leis e jurisprudências do nosso Tribunal. Nossa missão é fazer o melhor por aqueles que confiam uma procuração à nossa equipe. </p>
-                    <p>Hoje nosso escritório é um dos maiores, senão o maior da cidade de Canoas-RS, na especialidade dos Direitos Trabalhistas.</p>
-                </div>        
-                
-                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <!-- Indicadores -->
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="7" aria-label="Slide 7"></button>
-                      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="8" aria-label="Slide 8"></button>
-                    </div>
-                  
-                    <!-- Imagens do Carrossel -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="imagem1.jpg" class="d-block w-100" alt="Imagem 1">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagem2.jpg" class="d-block w-100" alt="Imagem 2">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagem3.jpg" class="d-block w-100" alt="Imagem 3">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagem4.jpg" class="d-block w-100" alt="Imagem 4">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagem5.jpg" class="d-block w-100" alt="Imagem 5">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagem6.jpg" class="d-block w-100" alt="Imagem 6">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagem7.jpg" class="d-block w-100" alt="Imagem 7">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagem8.jpg" class="d-block w-100" alt="Imagem 8">
-                      </div>
-                    </div>
-                  
-                    <!-- Botões de navegação -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Próximo</span>
-                    </button>
-                  </div>
+    <!-- Voltar ao topo -->
+    <a href="#" class="voltar-topo">
+      <i class="fas fa-arrow-up"></i> Voltar ao topo
+    </a>
 
-                <section class="areas-container">
-                    <hr class="section-divider">
-                    <h3 class="areas-atuacao">Áreas de Atuação</h3>
-                    <div class="areas-grid">
-                        <div class="area-item">Contencioso Judicial Trabalhista</div>
-                        <div class="area-item">Acordos Trabalhistas</div>
-                        <div class="area-item">Acidente e Doença Ocupacional</div>
-                        <div class="area-item">Direito Trabalhista</div>
-                        <div class="area-item">Estabilidade: Acidentária e Gestante</div>
-                        <div class="area-item">Execuções (Empresas Falidas)</div>
-                        <div class="area-item">Horas Extras Caminhoneiros e Outras</div>
-                        <div class="area-item">Vínculo de Emprego</div>
-                        <div class="area-item">Verbas Rescisórias</div>
-                        <div class="area-item">Insalubridade / Periculosidade</div>
-                        <div class="area-item">Fraudes dos Contratos de Trabalho</div>
-                        <div class="area-item">Nulidade do Contrato PJ e Pedido de Vínculo</div>
-                    </div>
-                </section>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <!-- Contatos -->
-            <div class="footer-section">
-                <h3>Contatos</h3>
-                <p>Email: advtrabalhista4552@gmail.com</p>
-                <div class="contato">
-                    <a href="https://wa.me/5551999436649" target="_blank">
-                        <img src="whatsapp-icon.png" alt="WhatsApp"> (51) 99943-6649 – Geral
-                    </a>
-                </div>
-                <div class="contato">
-                    <a href="https://wa.me/5551999997033" target="_blank">
-                        <img src="whatsapp-icon.png" alt="WhatsApp"> (51) 99999-7033 – Dra Sonia
-                    </a>
-                </div>
-                <div class="contato">
-                    <a href="https://wa.me/5551999733755" target="_blank">
-                        <img src="whatsapp-icon.png" alt="WhatsApp"> (51) 99973-3755 – Dr João
-                    </a>
-                </div>
-                <div class="contato">
-                    <a href="https://wa.me/5551999597033" target="_blank">
-                        <img src="whatsapp-icon.png" alt="WhatsApp"> (51) 99959-7033 – Acessibilidade
-                    </a>
-                </div>
-            </div>
-            <!-- Endereço -->
-            <div class="footer-section">
-                <h3>Endereço</h3>
-                <p>Localizado em Canoas-RS, no Bairro Mathias Velho</p>
-                <p>Avenida Rio Grande do Sul 455, sala 01 (2º andar).</p>
-                <p>Avenida Rio Grande do Sul 465 (Térreo).</p>
-            </div>
-                <!-- Atendimento -->
-            <div class="footer-section">
-                <h3>Atendimento</h3>
-                <p>Segunda a Sexta</p> 
-                <p>8:00h/12:00h - 13:15h/18:00h</p>
-            </div>
-        </div>
-    
-        <!-- Voltar ao topo -->
-        <a href="#" class="voltar-topo">Voltar ao topo</a>
-    </footer>
+    <!-- Direitos autorais -->
+    <div class="copyright">
+      <p>&copy; 2023 Viegas e Silva Advogados Associados. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
