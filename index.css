@@ -263,6 +263,8 @@ footer {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 2px solid var(--primary-color);
+
 }
 
 .carousel-inner {
