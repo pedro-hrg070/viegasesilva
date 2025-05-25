@@ -8,7 +8,7 @@
   <meta name="description" content="Escritório de advocacia trabalhista especializado em direitos trabalhistas e previdenciários.">
   <meta name="keywords" content="advogados, direito, justiça, direitos trabalhistas, advocacia trabalhista">
   <meta name="author" content="Pedro Gonçalves">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="vs.png" type="image/x-icon">
   <meta name="google-site-verification" content="b18ef6d28ad7a2a8">
 
@@ -18,77 +18,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Font Awesome para ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    /* Estilos específicos para o mapa */
-    .map-container {
-      height: 500px;
-      width: 100%;
-      border-radius: 8px;
-      border: 2px solid #d2b48c;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      overflow: hidden;
-      margin: 30px 0;
-    }
-    
-    .contato-cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 40px 0;
-    }
-    
-    .contato-card {
-      background: #fff;
-      border: 2px solid #000;
-      border-radius: 10px;
-      width: 200px;
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.3s ease;
-    }
-    
-    .contato-card:hover {
-      transform: scale(1.05);
-    }
-    
-    .contato-card i {
-      font-size: 2.5rem;
-      color: #d2b48c;
-      margin-bottom: 15px;
-    }
-    
-    .contato-card p {
-      color: #000;
-      font-weight: bold;
-      margin: 0;
-    }
-    
-    /* Estilos para o carrossel */
-    .carousel-section {
-      margin: 40px 0;
-    }
-    
-    .carousel {
-      border: 2px solid #d2b48c;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    
-    .carousel-item img {
-      height: 500px;
-      object-fit: cover;
-    }
-    
-    .intro-text {
-      background-color: #f8f9fa;
-      padding: 30px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-      border-left: 4px solid #d2b48c;
-    }
-  </style>
 </head>
 <body>
   <div class="contact-icons">
@@ -140,21 +69,17 @@
               <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="escritorio1.jpg" class="d-block w-100" alt="Recepção do escritório">
+                <img src="escritorio1.png" class="d-block w-100" alt="Recepção do escritório">
               </div>
               <div class="carousel-item">
-                <img src="escritorio2.jpg" class="d-block w-100" alt="Sala de reuniões">
+                <img src="escritorio2.png" class="d-block w-100" alt="Sala de espera do escritório">
               </div>
               <div class="carousel-item">
-                <img src="escritorio3.jpg" class="d-block w-100" alt="Área de trabalho dos advogados">
-              </div>
-              <div class="carousel-item">
-                <img src="escritorio4.jpg" class="d-block w-100" alt="Fachada do escritório">
+                <img src="escritorio3.png" class="d-block w-100" alt="Banheiro do escritório">
               </div>
             </div>
             
@@ -183,7 +108,8 @@
           </div>
           <div class="text-center mt-3">
             <a href="https://storage.googleapis.com/maps-solutions-m8w1y9t5by/locator-plus/69t6/locator-plus.html" target="_blank" class="btn btn-outline-dark">
-              <i class="fas fa-route"></i>Verifique as rotas</a>
+              <i class="fas fa-route"></i> Verifique as rotas
+            </a>
           </div>
         </div>
 
@@ -193,44 +119,54 @@
         <div class="about-text">
           <h3 class="text-center">CONTATE-NOS</h3>
           <div class="contato-cards">
+            <!-- WhatsApp Geral -->
             <div class="contato-card">
-              <a href="https://wa.me/5551999436649" target="_blank">
+              <div class="card-content">
                 <i class="fab fa-whatsapp"></i>
-                <p>WhatsApp Geral</p>
-                <small>(51) 99943-6649</small>
-              </a>
+                <h4>WhatsApp Geral</h4>
+                <p>(51) 99943-6649</p>
+                <a href="https://wa.me/5551999436649" target="_blank" class="btn-contato">Enviar mensagem</a>
+              </div>
             </div>
             
+            <!-- Dra. Sonia -->
             <div class="contato-card">
-              <a href="https://wa.me/5551999997033" target="_blank">
+              <div class="card-content">
                 <i class="fab fa-whatsapp"></i>
-                <p>Dra. Sonia</p>
-                <small>(51) 99999-7033</small>
-              </a>
+                <h4>Dra. Sonia</h4>
+                <p>(51) 99999-7033</p>
+                <a href="https://wa.me/5551999997033" target="_blank" class="btn-contato">Falar com a Dra.</a>
+              </div>
             </div>
             
+            <!-- Dr. João -->
             <div class="contato-card">
-              <a href="https://wa.me/5551999733755" target="_blank">
+              <div class="card-content">
                 <i class="fab fa-whatsapp"></i>
-                <p>Dr. João</p>
-                <small>(51) 99973-3755</small>
-              </a>
+                <h4>Dr. João</h4>
+                <p>(51) 99973-3755</p>
+                <a href="https://wa.me/5551999733755" target="_blank" class="btn-contato">Falar com o Dr.</a>
+              </div>
             </div>
             
+            <!-- Acessibilidade -->
             <div class="contato-card">
-              <a href="tel:+5551999436649">
-                <i class="fas fa-phone"></i>
-                <p>Telefone</p>
-                <small>(51) 99943-6649</small>
-              </a>
+              <div class="card-content">
+                <i class="fab fa-whatsapp"></i>
+                <h4>Acessibilidade</h4>
+                <p>(51) 99943-6649</p>
+                <a href="https://wa.me/5551999436649" target="_blank" class="btn-contato">Contato especial</a>
+              </div>
             </div>
             
+            <!-- E-mail -->
             <div class="contato-card">
-              <a href="mailto:advtrabalhista4552@gmail.com">
+              <div class="card-content">
                 <i class="fas fa-envelope"></i>
-                <p>E-mail</p>
-                <small>advtrabalhista4552@gmail.com</small>
-              </a>
+                <h4>E-mail</h4>
+                <p class="email">advtrabalhista4552@gmail.com</p>
+                <a href="mailto:advtrabalhista4552@gmail.com" class="btn-contato">Enviar e-mail</a>
+              </div>
             </div>
           </div>
         </div>
