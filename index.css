@@ -256,6 +256,7 @@ footer {
 }
 
 /* CARROSSEL - VERSÃO OTIMIZADA */
+/* CARROSSEL - VERSÃO OTIMIZADA */
 .carousel-container {
     max-width: 1000px;
     margin: 40px auto;
@@ -264,7 +265,6 @@ footer {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     border: 2px solid var(--primary-color);
-
 }
 
 .carousel-inner {
@@ -295,6 +295,27 @@ footer {
     margin: 0 auto;
 }
 
+/* Nome no canto direito - Versão sem tarja */
+/* Nome centralizado na foto */
+.team-name {
+    position: absolute;
+    top: 90%; /* Posiciona no centro vertical */
+    left: 50%; /* Posiciona no centro horizontal */
+    transform: translate(-50%, -50%); /* Ajuste fino para centralização perfeita */
+    color: white;
+    font-size: 1.4rem; /* Tamanho aumentado para melhor visibilidade */
+    font-weight: 600;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8); /* Sombra mais forte */
+    text-align: center; /* Alinhamento central */
+    width: 90%; /* Largura máxima */
+    margin: 0;
+    padding: 0;
+    z-index: 2; /* Garante que fique acima da imagem */
+}
+.team-name {
+    background-color: transparent;
+    padding: 0;
+}
 /* Controles de navegação */
 .carousel-control {
     position: absolute;
@@ -348,8 +369,13 @@ footer {
     .carousel-inner {
         height: 350px;
     }
-}
-.contact-icons {
+    
+    .team-name {
+        font-size: 1.1rem;
+        bottom: 20px;
+        right: 20px;
+    }
+}.contact-icons {
     position: fixed;
     bottom: 20px;
     right: 20px;
